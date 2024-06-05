@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel chosenLayoutAlgorithm="4">
+  <struct>
+    <and mandatory="true" name="GEMA_SPL">
+      <and mandatory="true" name="MapViewer">
+        <or mandatory="true" name="MV_MapServer">
+          <feature mandatory="true" name="MV_MS_GeoServer"/>
+          <and mandatory="true" name="MV_MS_GeoJSON">
+            <feature name="MV_MS_GJ_Cached"/>
+            <feature name="MV_MS_GJ_Paginated"/>
+          </and>
+        </or>
+        <and mandatory="true" name="MV_Tools">
+          <feature name="MV_T_ZoomWindow"/>
+          <feature name="MV_T_Export">
+        </and>
+        <or name="MV_LayerManagement">
+          <feature mandatory="true" name="MV_LM_BaseLayerSelector"/>
+          <feature mandatory="true" name="MV_LM_Order"/>
+          <feature mandatory="true" name="MV_LM_CenterViewOnLayer"/>
+          <feature mandatory="true" name="MV_LM_HideLayer"/>
+          <feature mandatory="true" name="MV_LM_Opacity"/>
+          <feature mandatory="true" name="MV_LM_Style"/>
+        </or>
+        <alt mandatory="true" name="MV_MapManagement">
+          <feature mandatory="true" name="MV_MM_UniqueMapViewer">
+          <feature name="MV_MM_MultipleMapViewer">
+        </alt>
+      </and>
+      <and name="UserManagement">
+        <or name="UM_Registration">
+          <feature mandatory="true" name="UM_R_ByAdmin"/>
+          <feature mandatory="true" name="UM_R_Anonymous"/>
+        </or>
+        <and mandatory="true" name="UM_Authentication">
+          <feature disabled="true" name="UM_A_RememberPass"/>
+          <feature name="UM_A_RecoverPass"/>
+        </and>        
+      </and>
+    </and>
+  </struct>
+  <calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+  <comments/>
+  <featureOrder userDefined="false"/>
+</featureModel>

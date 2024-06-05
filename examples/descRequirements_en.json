@@ -1,0 +1,33 @@
+{
+  "GEMA_SPL": { "label": "GEMA Software Product Line" },
+  "MapViewer": { "label": "Map Viewer", "desc": "Map Viewer" },
+  "MV_MapManagement": { "label": "Map management","desc": "Map management" },
+  "MV_MM_UniqueMapViewer": { "label": "Unique map viewer", "desc": "Enables to have a single map viewer." },
+  "MV_MM_MultipleMapViewer": { "label": "Multiple map viewer", "desc": "Enables to have multiple map viewers."},
+  "MV_MapServer": { "label": "Map Server","desc": "Map Server" },
+  "MV_MS_GeoServer": { "label": "GeoServer","desc": "Uses GeoServer (open-source server for spatial data management) as map server"  },
+  "MV_MS_GeoJSON": { "label": "GeoJSON","desc": "Uses GeoJSON (format for representing geographic elements) as a map server." },
+  "MV_MS_GJ_Paginated": { "label": "Paginated GeoJSON layers","desc": "Enables pagination of layers in GeoJSON" },
+  "MV_MS_GJ_Cached": { "label": "Cached GeoJSON layers", "desc": "Enables caching of layers in GeoJSON" },
+  "MV_MS_Deegree": { "label": "Deegree", "desc": "Deegree" },
+  "MV_Tools": { "label": "Map Viewer Tools","desc": "Map Viewer Tools" },
+  "MV_T_ZoomWindow": { "label": "Zoom to a region","desc": "Enables zooming to a region on the map."  },
+  "MV_T_Export": {
+    "label": "Export Map",
+    "desc": "Export current view of the map"
+  },
+  "MV_LayerManagement": { "label": "Layer Management", "desc": "Enables to manage the layers displayed on the map"  },
+  "MV_LM_BaseLayerSelector": { "label": "Base Layer Selector", "desc": "Enables to select the base layers."  },
+  "MV_LM_Order": { "label": "Order Layers", "desc": "Enables to add an overlay order of the layers"  },
+  "MV_LM_CenterViewOnLayer": { "label": "Center View on Layer",  "desc": "Enables to center a view on a specific layer"  },
+  "MV_LM_HideLayer": { "label": "Show/Hide Layers", "desc": "Enables you to select whether you want to show or hide each layer of the map."  },
+  "MV_LM_Opacity": { "label": "Change Layer Opacity", "desc": "Enables you to change the opacity of the colored surface of the layers" },
+  "MV_LM_Style": { "label": "Change Layer Style", "desc": "Allows to add custom styles to layers"  },
+  "UserManagement": { "label": "User Management","desc": "User Management" },
+  "UM_Registration": { "label": "User Registration","desc": "User Registration" },
+  "UM_R_ByAdmin": { "label": "Registration by Admin","desc": "Registration of new users is done by administrator user."  },
+  "UM_R_Anonymous": { "label": "Anonymous Registration","desc": "An anonymous user can perform the registration in the application by himself"  },
+  "UM_Authentication": { "label": "User Authentication","desc": "User Authentication" },
+  "UM_A_RememberPass": { "label": "Remember Password","desc": "Enables the browser to remember the user's password."  },
+  "UM_A_RecoverPass": { "label": "Recover Password","desc": "Enables password recovery option for registered users."  }
+}
