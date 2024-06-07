@@ -60,7 +60,7 @@ def similarity_process(nameReq,nameFeat,nameDesc,lang,lista_modelos_=[],listMode
     
     if len(lista_modelos_)<1:
         lista_modelos_ = load_models()
-    fileRequirement = open(FILES_DIR + '/' + nameReq, "r")   
+    fileRequirement = open(nameReq, "r")   
     lista_file = []
     file = fileRequirement.read()
     csv_data = csv.reader(StringIO(file), delimiter='\t')        
@@ -142,7 +142,7 @@ def genera_archivo_txt(df,nombre):
         archivo con el nombre indicado más la fecha actual.
     """
     nombreArchivo = nombre + ".csv"
-    df.to_csv(FILES_DIR + '/'+ nombreArchivo, encoding='utf-8',index=False)
+    df.to_csv(nombreArchivo, encoding='utf-8',index=False)
    
 def prediccion_fastText(texto, modelo):
     prediccion_modelo = modelo.predict(texto)

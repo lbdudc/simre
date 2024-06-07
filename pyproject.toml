@@ -1,8 +1,8 @@
 [project]
 name = "simre"
-version = "0.0.8"
+version = "0.0.3"
 authors = [
-  { name="María Isabel Limaylla", email="mlimaylla@gmail.com" },
+  { name="María Isabel Limaylla", email="mlimaylla@udc.es" },
 ]
 description = "Requirements Similarity tool for Software Product Lines"
 readme = "README.md"
@@ -33,5 +33,5 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/sampleproject"
-Issues = "https://github.com/sampleproject/issues"
+Homepage = "https://github.com/lbdudc/simre"
+Issues = "https://github.com/lbdudc/simre/issues"

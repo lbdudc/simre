@@ -5,9 +5,9 @@
 ## Parameters description
 
 * You need to enter seven parameters. These parameters are the following:
-  * nameNewReq: name of the CSV file that contains the list of new requirements. Must be in fileserver folder.
-  * nameFeatures: name of the XML or UVL file that contains the existing requirements. Must be in fileserver folder.
-  * nameReqDescription: name of the JSON file that contains the requirements description. Must be in fileserver folder.
+  * nameNewReq: name of the CSV file that contains the list of new requirements. 
+  * nameFeatures: name of the XML or UVL file that contains the existing requirements. 
+  * nameReqDescription: name of the JSON file that contains the requirements description. 
   * language: 'en' for English and 'es' for Spanish
   * listModels: array with the models. optional. The default model is 1. The models are the following:
       * 1:Model multilingual MiniLM-L12-v2
@@ -37,7 +37,6 @@ models = similarity.load_models()
 
 ### Usage
 
-* The first three parameters must be on the fileserver folder. 
 * The method similarity_process perform the similarity process.
 
 ```
@@ -56,7 +55,7 @@ similarity.similarity_process('newRequirements.csv', 'featureModel.xml', 'descRe
 similarity.similarity_process('newRequirements.csv', 'featureModel.xml', 'descRequirements_en.json', 'en',models,[1,2,3],0.6,False) 
 ```
 
-* The results will be provided in a CSV file on the fileserver folder ('Similarity List.csv'). 
+* The results will be provided in a CSV file ('Similarity List.csv'). 
 
 
 ## Installation by code

@@ -9,21 +9,16 @@ import pandas as pd
 from uvl.UVLCustomLexer import UVLCustomLexer
 from uvl.UVLPythonParser import UVLPythonParser
 from antlr4 import CommonTokenStream, FileStream
-import tempfile
-from pathlib import Path
-   
-BASE_DIR = Path(__file__).resolve().parent.parent
-FILES_DIR = os.path.abspath(os.path.join(BASE_DIR, './fileserver'))
 
 def get_req_feature(fileFeature, fileJson):
     
-    fileDescriptions = open(FILES_DIR + '/' + fileJson, "r")       
+    fileDescriptions = open(fileJson, "r")       
     
     if fileFeature.endswith('xml') :
-         fileFeatures = open(FILES_DIR + '/' + fileFeature, "r")         
+         fileFeatures = open(fileFeature, "r")         
          df_list_features = get_req_feature_xml(fileFeatures, fileDescriptions)  
     elif fileFeature.endswith('uvl'):
-        df_list_features = get_req_feature_uvl(FILES_DIR + '/' + fileFeature, fileDescriptions)    
+        df_list_features = get_req_feature_uvl(fileFeature, fileDescriptions)    
     else:
         print('error')
         
